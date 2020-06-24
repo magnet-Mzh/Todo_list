@@ -11,7 +11,7 @@ public class ToDoList {
         int choose = sc1.nextInt();
         ArrayList<EventMark> list = new ArrayList<>();
 
-        while(choose != 4){
+        while(choose != 5){
             if(choose == 1){
                 System.out.println("欢迎来到添加界面,请输入添加事项名称");
                 Scanner sc2 = new Scanner(System.in);
@@ -61,7 +61,7 @@ public class ToDoList {
             }else{
                 str = str2;
             }
-            System.out.println(i+":"+list.get(i).getThing()+",该事项"+str);
+            System.out.println((i+1)+":"+list.get(i).getThing()+",该事项"+str);
         }
     }
     public static void repeat(){
